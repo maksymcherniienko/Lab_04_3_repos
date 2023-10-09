@@ -26,7 +26,7 @@ int main()
 		<< setw(7) << "F" << "      |" << endl;
 	cout << "---------------------------" << endl;
 
-	while (x <= xk)
+	for (x; x <= xk; x += dx)
 	{
 		if (x < 0 && b != 0)
 			F = a - x / (10 + b);
@@ -38,7 +38,6 @@ int main()
 		cout << "|" << setw(7) << setprecision(2) << x
 			<< "   |" << setw(10) << setprecision(3) << F
 			<< "   |" << endl;
-		x += dx;
 	}
 	cout << "---------------------------" << endl;
 }
